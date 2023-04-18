@@ -22,4 +22,7 @@ func main() {
 	var c int = '棒'
 	fmt.Println("c未格式化的结果:", c)      // 结果为 26834
 	fmt.Printf("c格式化后的结果: %c \n", c) // 结果为 棒
+
+	var d int = '👴'
+	fmt.Printf("d格式化后的结果: %c \n", d)
 }
