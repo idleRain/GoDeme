@@ -11,6 +11,9 @@ func main() {
 	fmt.Scanln(&n2)
 	fmt.Scanln(&operation)
 	fmt.Println("最后的结果是:", cal(n1, n2, operation))
+
+	sum, sub := getSumAndSub(2, 1) // 接收多个返回值
+	fmt.Printf("sum%v和sub%v:", sum, sub)
 }
 
 func cal(n1 float64, n2 float64, operation string) float64 {
@@ -28,4 +31,9 @@ func cal(n1 float64, n2 float64, operation string) float64 {
 		fmt.Println("运算符输入有误")
 	}
 	return res
+}
+
+// 函数可以有多个返回值
+func getSumAndSub(n1 int, n2 int) (int, int)  {
+	return n1 + n2, n1 - n2
 }
