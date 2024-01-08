@@ -16,4 +16,8 @@ func main() {
 	fmt.Println("slice元素个数=", len(s))
 	// 使用内置函数 cap 获得容量，注：切片容量是可变的
 	fmt.Println("slice容量=", cap(s))
+
+	// 直接定义一个切片, 与定义数组类似，但是不指定长度
+	strSlice := []string{"wow", "hi", "hey"}
+	fmt.Printf("strSlice:%v, len:%v, cap:%v", strSlice, len(strSlice), cap(strSlice))
 }
